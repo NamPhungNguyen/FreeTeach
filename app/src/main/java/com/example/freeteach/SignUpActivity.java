@@ -11,20 +11,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LoginActivity extends AppCompatActivity {
-
-    TextView btn_sign_up;
-
+public class SignUpActivity extends AppCompatActivity {
+    TextView text_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        btn_sign_up = findViewById(R.id.btn_sign_up);
+        setContentView(R.layout.activity_sign_up);
+        text_back = findViewById(R.id.text_back);
 
-        btn_sign_up.setOnClickListener(new View.OnClickListener() {
+        text_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
+                startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
             }
         });
     }
