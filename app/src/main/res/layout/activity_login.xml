@@ -6,75 +6,74 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     tools:context=".LoginActivity">
-
     <TextView
         android:id="@+id/text_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quay lại"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/_16font_mdp"
         android:textStyle="bold"
         android:drawableLeft="@drawable/back"
-        android:layout_marginTop="19dp"
-        android:layout_marginLeft="30dp"
-        android:drawablePadding="10dp"
+        android:layout_marginTop="@dimen/_19mdp"
+        android:layout_marginLeft="@dimen/_30mdp"
+        android:drawablePadding="@dimen/_10mdp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"/>
 
     <LinearLayout
-        android:layout_marginTop="48dp"
         android:layout_below="@id/text_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="@dimen/_26mdp"
         android:gravity="center">
         <ImageView
+            android:layout_marginTop="@dimen/_14mdp"
             android:id="@+id/logo_free_teach_login"
-            android:layout_width="184dp"
-            android:layout_height="191dp"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_100mdp"
             android:src="@drawable/logo_free_teach"
             />
 
         <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:hint="Tên đăng nhập"
             android:textColorHint="@color/white"
             android:textStyle="normal"
             android:drawableLeft="@drawable/user"
             android:background="@drawable/rounded_corner"
-            android:layout_marginTop="40dp"
-            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_40mdp"
+            android:textSize="@dimen/_20font_mdp"
             android:backgroundTint="#4DFFFFFF"
-            android:drawablePadding="14dp"
-            android:paddingHorizontal="29dp"
+            android:drawablePadding="@dimen/_14mdp"
+            android:paddingHorizontal="@dimen/_28mdp"
             />
 
         <EditText
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:hint="Mật khẩu"
             android:textColorHint="@color/white"
             android:textStyle="normal"
             android:drawableLeft="@drawable/lock"
             android:background="@drawable/rounded_corner"
-            android:layout_marginTop="40dp"
-            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_40mdp"
+            android:textSize="@dimen/_20font_mdp"
             android:backgroundTint="#4DFFFFFF"
-            android:drawablePadding="14dp"
-            android:paddingHorizontal="29dp"
+            android:drawablePadding="@dimen/_14mdp"
+            android:paddingHorizontal="@dimen/_28mdp"
             />
 
         <LinearLayout
+            android:gravity="center"
             android:id="@+id/text_choose_answer"
-            android:layout_marginVertical="26dp"
+            android:layout_marginVertical="@dimen/_26mdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="11dp"
             android:orientation="horizontal">
 
             <TextView
@@ -83,17 +82,19 @@
                 android:drawableLeft="@drawable/tickchecked"
                 android:text="Ghi nhớ đăng nhập"
                 android:textColor="@color/white"
-                android:drawablePadding="4dp"
-                android:textSize="16dp"
+                android:drawablePadding="@dimen/_4mdp"
+                android:textSize="@dimen/_12font_mdp"
                 />
 
             <TextView
+                android:layout_gravity="end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text_forgot_pass"
                 android:textColor="@color/white"
-                android:textSize="16dp"
-                android:layout_marginHorizontal="14dp"
+                android:textSize="@dimen/_12font_mdp"
+                android:layout_marginHorizontal="@dimen/_14mdp"
+
                 />
 
         </LinearLayout>
@@ -101,53 +102,48 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:background="@drawable/rounded_corner"
             android:backgroundTint="@color/white"
             android:textStyle="bold"
             android:textColor="#19701C"
-            android:textSize="22dp"
+            android:textSize="@dimen/_16font_mdp"
             android:text="Đăng nhập"/>
 
         <LinearLayout
-            android:layout_marginVertical="31dp"
+            android:layout_marginVertical="@dimen/_22mdp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/line1"
                 android:drawableRight="@drawable/line1"
                 android:text="hoặc"
-                android:textSize="15dp"
+                android:textSize="@dimen/_10font_mdp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:drawablePadding="6dp"
+                android:drawablePadding="@dimen/_6mdp"
                 />
-
-
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login_google"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:background="@drawable/rounded_corner"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/logo_google"
-            android:paddingHorizontal="42dp"
-            android:drawablePadding="6dp"
+            android:paddingHorizontal="@dimen/_22mdp"
+            android:drawablePadding="@dimen/_6mdp"
             android:textStyle="bold"
             android:textColor="#19701C"
-            android:textSize="20dp"
+            android:textSize="@dimen/_16font_mdp"
             android:text="Đăng nhập Google"/>
 
-
         <LinearLayout
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="@dimen/_56mdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -166,8 +162,5 @@
                 android:textColor="@color/white"
                 />
         </LinearLayout>
-
-
     </LinearLayout>
-
 </RelativeLayout>

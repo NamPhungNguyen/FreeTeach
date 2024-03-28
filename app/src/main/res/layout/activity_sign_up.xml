@@ -13,109 +13,104 @@
         android:layout_height="wrap_content"
         android:text="Quay lại"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/_16font_mdp"
         android:textStyle="bold"
         android:drawableLeft="@drawable/back"
-        android:layout_marginTop="19dp"
-        android:layout_marginLeft="30dp"
-        android:drawablePadding="10dp"
+        android:layout_marginTop="@dimen/_19mdp"
+        android:layout_marginLeft="@dimen/_30mdp"
+        android:drawablePadding="@dimen/_10mdp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"/>
 
     <LinearLayout
-        android:layout_marginTop="48dp"
         android:layout_below="@id/text_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="@dimen/_26mdp"
         android:gravity="center">
         <ImageView
+            android:layout_marginTop="@dimen/_14mdp"
             android:id="@+id/logo_free_teach_login"
-            android:layout_width="184dp"
-            android:layout_height="191dp"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_100mdp"
             android:src="@drawable/logo_free_teach"
             />
 
         <EditText
-            android:id="@+id/edt_login"
+            android:id="@+id/edt_username"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:hint="Tên đăng nhập"
             android:textColorHint="@color/white"
             android:textStyle="normal"
             android:drawableLeft="@drawable/user"
             android:background="@drawable/rounded_corner"
-            android:layout_marginTop="40dp"
-            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_40mdp"
+            android:textSize="@dimen/_20font_mdp"
             android:backgroundTint="#4DFFFFFF"
-            android:drawablePadding="14dp"
-            android:paddingHorizontal="29dp"
+            android:drawablePadding="@dimen/_14mdp"
+            android:paddingHorizontal="@dimen/_28mdp"
             />
 
         <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:hint="Email"
             android:textColorHint="@color/white"
             android:textStyle="normal"
             android:drawableLeft="@drawable/email"
             android:background="@drawable/rounded_corner"
-            android:layout_marginTop="40dp"
-            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_40mdp"
+            android:textSize="@dimen/_20font_mdp"
             android:backgroundTint="#4DFFFFFF"
-            android:drawablePadding="14dp"
-            android:paddingHorizontal="29dp"
+            android:drawablePadding="@dimen/_14mdp"
+            android:paddingHorizontal="@dimen/_28mdp"
             />
 
         <EditText
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="@dimen/_46mdp"
             android:hint="Mật khẩu"
             android:textColorHint="@color/white"
             android:textStyle="normal"
             android:drawableLeft="@drawable/lock"
             android:background="@drawable/rounded_corner"
-            android:layout_marginTop="40dp"
-            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_40mdp"
+            android:textSize="@dimen/_20font_mdp"
             android:backgroundTint="#4DFFFFFF"
-            android:drawablePadding="14dp"
-            android:paddingHorizontal="29dp"
+            android:drawablePadding="@dimen/_14mdp"
+            android:paddingHorizontal="@dimen/_28mdp"
             />
 
         <EditText
             android:id="@+id/edt_confirm_password"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:hint="Mật khẩu"
+            android:layout_height="@dimen/_46mdp"
+            android:hint="Nhập lại mật khẩu"
             android:textColorHint="@color/white"
             android:textStyle="normal"
             android:drawableLeft="@drawable/lock"
             android:background="@drawable/rounded_corner"
-            android:layout_marginTop="40dp"
-            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_40mdp"
+            android:textSize="@dimen/_20font_mdp"
             android:backgroundTint="#4DFFFFFF"
-            android:drawablePadding="14dp"
-            android:paddingHorizontal="29dp"
+            android:drawablePadding="@dimen/_14mdp"
+            android:paddingHorizontal="@dimen/_28mdp"
             />
-
-
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_marginTop="@dimen/_36mdp"
+            android:layout_height="@dimen/_46mdp"
             android:background="@drawable/rounded_corner"
             android:backgroundTint="@color/white"
             android:textStyle="bold"
             android:textColor="#19701C"
-            android:textSize="22dp"
-            android:text="Đăng ký"
-            android:layout_marginTop="32dp"/>
-
-
+            android:textSize="@dimen/_16font_mdp"
+            android:text="Đăng ký"/>
     </LinearLayout>
-
 </RelativeLayout>
